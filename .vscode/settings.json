@@ -1,0 +1,6 @@
+{
+    "python.analysis.typeCheckingMode": "basic",
+    "python.analysis.extraPaths": [
+        "./venv/lib/python3.12/site-packages/pandas/tests/series/methods/test_to_"
+    ]
+}
