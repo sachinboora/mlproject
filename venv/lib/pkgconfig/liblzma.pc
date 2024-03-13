@@ -1,0 +1,20 @@
+#
+# Author: Lasse Collin
+#
+# This file has been put into the public domain.
+# You can do whatever you want with this file.
+#
+
+prefix=/Users/sachinboora/Desktop/mlproject/venv
+exec_prefix=/Users/sachinboora/Desktop/mlproject/venv
+libdir=/Users/sachinboora/Desktop/mlproject/venv/lib
+includedir=/Users/sachinboora/Desktop/mlproject/venv/include
+
+Name: liblzma
+Description: General purpose data compression library
+URL: https://xz.tukaani.org/xz-utils/
+Version: 5.4.6
+Cflags: -I${includedir}
+Cflags.private: -DLZMA_API_STATIC
+Libs: -L${libdir} -llzma
+Libs.private: -pthread -lpthread
