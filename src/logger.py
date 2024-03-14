@@ -1,3 +1,6 @@
+import sys
+from pathlib import Path
+sys.path.append(str(Path('src').parent.parent))  
 import logging
 import os
 from datetime import datetime
