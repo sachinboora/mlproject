@@ -22,7 +22,8 @@ jobs:
         with:
           python-version: '3.12'
           architecture: 'x64'
-
+      - name: Remove existing virtual environment (if present)
+        run: rm -rf venv
       - name: Create and start virtual environment
         run: |
           python -m venv venv
